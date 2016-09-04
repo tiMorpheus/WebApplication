@@ -1,0 +1,26 @@
+package edu.shop.java.dao.impl;
+
+import edu.shop.java.dao.ItemDao;
+import edu.shop.java.dao.accessors.FileDatasourceAccessor;
+import edu.shop.java.models.Model;
+
+
+public abstract class FileAbstractDao<T extends Model> extends FileDatasourceAccessor{
+
+
+
+    public void remove(T model){
+
+    }
+
+    public void add(T model){
+
+
+    }
+
+    public void update(T model){
+
+    }
+
+
+}
