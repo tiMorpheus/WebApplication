@@ -9,7 +9,7 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
     <name>education shop</name>
-    <desctiption>education shop description</desctiption>
+    <description>education shop description</description>
 
     <build>
         <plugins>
@@ -44,7 +44,6 @@
         </dependency>
         <!-- https://mvnrepository.com/artifact/jstl/jstl -->
         <dependency>
-            LOGGING
             <groupId>jstl</groupId>
             <artifactId>jstl</artifactId>
             <version>1.2</version>

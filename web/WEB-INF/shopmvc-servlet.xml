@@ -34,9 +34,9 @@
         <property name="suffix" value=".jsp" />
     </bean>
 
-    <mvc:resources mapping="/css/**" location="/css/" />
-    <mvc:resources mapping="/js/**" location="/js/" />
-    <mvc:resources mapping="/images/**" location="/images/" />
+    <mvc:resources mapping="/css/**" location="/web/css/" />
+    <mvc:resources mapping="/js/**" location="/web/js/" />
+    <mvc:resources mapping="/images/**" location="/web/images/" />
 
     <context:property-placeholder location="classpath:application.properties" />
 
