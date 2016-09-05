@@ -4,5 +4,7 @@ import edu.shop.java.models.User;
 
 public interface UserDao extends ItemDao<User>{
 
+    User getByUsername(String username);
+
 
 }

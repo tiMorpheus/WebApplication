@@ -1,1 +1,1 @@
-<% response.sendRedirect("/shop/home.html"); %>
+<% response.sendRedirect("/web/home.html"); %>

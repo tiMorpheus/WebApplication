@@ -16,7 +16,7 @@ public class Role extends Model {
 
     @NotNull
     @Min(value=4)
-    @Column(name = "title", length = 25)
+    @Column(name = "title", length = 25, insertable = false, updatable = false)
     private RoleList title;
 
     @Column(name = "title", length = 255)

@@ -83,8 +83,8 @@
     <security:http pattern="/images/**" security="none" />
     <security:http pattern="/js/**" security="none" />
     <security:http pattern="/user/**" security="none" />
-
     <security:http auto-config="true" use-expressions="true" access-denied-page="/user/access_denied.html" >
+            <security:access-denied-handler error-page="/user/access_denied.jsp"/>
             <security:form-login login-page="/user/login.html"
             login-processing-url="auth.htm" username-parameter="username"
             password-parameter="password" default-target-url="/product/list.html"
@@ -92,15 +92,15 @@
 
             <security:intercept-url pattern="/product/list.html" access="isAuthenticated()" />
             <security:logout logout-url="/logout.htm"/>
-            <security:remember-me user-service-ref="userAuthorityService" key="shop_key"/>
+            <security:remember-me user-service-ref="userService" key="shop_key"/>
 
 
     </security:http>
 
     <security:authentication-manager>
-    <security:authentication-provider user-service-ref="userAuthorityService">
-        <security:password-encoder ref="passwordHelper" />
-    </security:authentication-provider>
+        <security:authentication-provider user-service-ref="userService">
+            <security:password-encoder ref="passwordHelper" />
+        </security:authentication-provider>
     </security:authentication-manager>
 
     <bean id="roleVoter" class="org.springframework.security.access.vote.RoleVoter">

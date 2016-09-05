@@ -8,7 +8,7 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
-@Repository
+@Repository(value = "productDatabaseDao")
 public class ProductDatabaseDao extends HibernateAbstractDao<Product> implements ProductDao{
 
     public ProductDatabaseDao() {

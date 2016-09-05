@@ -5,14 +5,14 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 
 <t:template>
-    <form action="/auth.htm" method="post">
+    <form action="/auth.htm" method="POST">
         <input type="hidden" name="_spring_security_remember_me" value="true" />
         <div>
-            <label>username</label>
+            <label>Username: </label>
             <input type="text" name="username" value="" placeholder="Your name" />
         </div>
         <div>
-            <label>password</label>
+            <label>Password: </label>
             <input type="password" name="password" value="" />
         </div>
         <div>

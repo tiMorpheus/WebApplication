@@ -16,7 +16,7 @@ public class HomeController {
     public ModelAndView index(){
         ModelAndView modelAndView = new ModelAndView();
 
-        modelAndView.setViewName("home.jsp");
+        modelAndView.setViewName("home");
 
         return modelAndView;
     }
